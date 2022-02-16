@@ -1,39 +1,40 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# API Placeholder
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+[![pub package](https://img.shields.io/pub/v/shared_preferences.svg)](https://pub.dev/packages/shared_preferences)
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+A composable, light-weight package that can be used as a placeholder whenever you need some fake data.
+With this package, you can get some famous API Responses like, users, posts, comment, photos, todos, etc.
+It can be used for prototyping and testing, before using real Real API Endpoints.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+To use this plugin, add `api_placeholder` as a dependency in your `pubspec.yaml`
 
 ```dart
-const like = 'sample';
+  void getFakeUsers() async {
+    String x = await ApiPlaceholder().getUsers()
+    // Return a list of users
+    print(x);
+  }
+  
+  void getFakePhotos() async {
+    String x = await ApiPlaceholder().getPhotos(id: 4);
+    // When Id is passed, it returns only one photo with that particular Id
+    print(x);
+  }
+  
+  void getFakeTodos() async {
+    String x = await ApiPlaceholder().getTodos(limit: 5);
+    // When limit is passed, it limits the number od todos.
+    print(x);
+  }
 ```
+
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+Everyone is welcome to contrbute, or file any issue on this package.
+
+Github Repo: https://github.com/ViAsmit/api_placeholder_package
