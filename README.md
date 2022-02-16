@@ -1,6 +1,6 @@
 # API Placeholder
 
-[![pub package](https://img.shields.io/pub/v/shared_preferences.svg)](https://pub.dev/packages/shared_preferences)
+[![pub package](https://img.shields.io/pub/v/shared_preferences.svg)](https://pub.dev/packages/api_placeholder) [![pub package](https://img.shields.io/badge/dependencies-http-blue)](https://pub.dev/packages/api_placeholder) 
 
 
 
